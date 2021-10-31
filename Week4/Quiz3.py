@@ -5,4 +5,3 @@ if num <= 0:
 else:
     for i in range(1, 11):
         print(num * i, end=" ")
-        i += 1
