@@ -7,7 +7,7 @@ unionAry = set() # 교집합을 구하기 위한 세트
 
 for x in range(3):
     intList = input("정수로 이루어진 리스트를 입력해 주세요 : ")
-    splInt = intList.split() # 띄어쓰기 제거
+    splInt = intList.split() # 띄어쓰기 기준으로 쪼개줌
     setInt = set(splInt) # 자료형은 문자열이지만 사실은 숫자인 어레이 리스트를 세트로 형변환 {'3', '6', '9'}
     intAry.append(setInt) # 세트인 원소로 이루어진 세트 리스트가 만들어짐 [{}, {}, {}]
     # 교집합은 반복문 안에서 어떻게 바로 비교해줄지 모르겠음 ㅜㅜ
