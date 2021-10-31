@@ -8,5 +8,4 @@ if num <= 0 or num > 100:
 else:
     for i in range (1, num+1):
         total += i
-        i += 1
     print(total)
