@@ -7,9 +7,9 @@
 idNum = int(input("인터넷 게임 계정의 수를 입력해 주세요 : "))
 idAry = []
 
-for x in range(idNum):  # 게임 계정의 수만큼 어레이 만들기 위해
+for x in range(idNum):  # 게임 계정의 수만큼 리스트 만듬
     idInfo = input("각 계정의 아이디, 승률, 계급을 입력해 주세요 : ")
-    splInfo = idInfo.split()  # 각 항목을 서로 비교하기 위해
-    idAry.append(splInfo)  # 어레이에 정보를 담아줌
+    splInfo = idInfo.split()  # 각 항목을 띄어쓰기 기준으로 쪼개줌
+    idAry.append(splInfo)  # 리스트에 저장
     if ((idAry[x][2] != 'Bronze') and (float(idAry[x][1]) >= 60.0)) or (idAry[x][2] == 'Platinum'):  # 조건에 맞으면 고수로 인정해 줌
         print("[Gosu]", idAry[x][0])
