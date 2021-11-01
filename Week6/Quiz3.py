@@ -15,6 +15,8 @@ for x in range(num):
 
 insertCntry = input("수도를 알고 싶은 나라를 입력해 주세요 : ")
 if insertCntry in capOfCntry: # 만약 알고 싶은 나라가 딕셔너리에 있다면
-    print(capOfCntry.get(insertCntry, "Unknown Country")) # 그 나라(key)에 대응되는 수도의 이름(값)을 알려준다.
+    print(capOfCntry.get(insertCntry)) # 그 나라(key)에 대응되는 수도의 이름(값)을 알려준다.
+else:
+    print("Unknown Country") # get(key, "error!") 는 왜 안 될까
 
 
